@@ -1,16 +1,16 @@
 import React from 'react';
-import Characters from "./Characters";
+import CharacterCard from "./CharacterCard";
 
 function CharacterList(props) {
     return(
         <div>
-            {props.characters.map(characters => {
-                return <Characters 
-                characters= {characters}
-                key= {characters.id}/>;
-            })}
+            {props.characters.map(characters => (<CharacterCard characters={characters} />))}
         </div>
     );
 }
 
 export default CharacterList; 
+
+/*
+ {props.characters.map(characters => (<CharacterCard characters={characters}/>))}
+ */
