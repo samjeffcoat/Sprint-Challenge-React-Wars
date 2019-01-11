@@ -4,7 +4,7 @@ import Characters from "./Characters";
 function CharacterList(props) {
     return(
         <div>
-            {props.starwarsChars.map(characters => {
+            {props.characters.map(characters => {
                 return <Characters 
                 characters= {characters}
                 key= {characters.id}/>;
