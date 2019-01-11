@@ -2,11 +2,11 @@ import React from 'react';
 
 function CharacterCard (props)  {
     return (
-    <div>
-        <div><h1>Name:</h1> {props.characters.name}</div>
-                    <div>
+    <div className= "card">
+            <div className="name"><h1>Name:</h1> {props.characters.name}</div>
+                    <div className= "stats">
                         <h6>Birth Year:</h6>{props.characters.birth_year}
-                        <h6>Home World:</h6>{props.characters.homeworld}
+                        <h6>Home World:</h6><img className="home-world" src={props.characters.homeworld}/>
                         <h6>Gender:</h6>{props.characters.gender}
                         <h6>Height: </h6>{props.characters.height}
                         <h6>Mass: </h6>{props.characters.mass}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import CharacterList from "./components/CharacterList";
 import CharacterCard from "./components/CharacterCard";
+import "./components/StarWars.css";
 
 class App extends Component {
   constructor() {
